@@ -1,3 +1,3 @@
-# Html learning phase
+# HTML Learning Phase
 
-this is a repo where i learn about html and push daily practice and new learning things
+This is a repository where I learn HTML and push my daily practice and newly learned concepts.
