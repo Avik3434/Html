@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_tests</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #f8f5ed, #eee9dc);
+        color: #38352e;
+        line-height: 1.8;
+        padding: 45px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    strong {
+        color: #80652f;
+        font-weight: 700;
+    }
+
+    em {
+        color: #9a8253;
+    }
+
+    a {
+        color: #947332;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.25s ease;
+    }
+
+    a:hover {
+        color: #5f481c;
+        text-decoration: underline;
+    }
+
+    code {
+        background: #eee5cf;
+        color: #80632b;
+        padding: 3px 7px;
+        border-radius: 5px;
+        font-family: "Consolas", monospace;
+        font-size: 0.9em;
+    }
+
+    blockquote {
+        background: #f0eadb;
+        border-left: 5px solid #b69a5b;
+        padding: 18px 24px;
+        margin: 25px 0;
+        border-radius: 0 10px 10px 0;
+        color: #5b5343;
+    }
+
+    blockquote p {
+        margin: 0;
+    }
+
+    q {
+        color: #947332;
+        font-style: italic;
+        quotes: "“" "”";
+    }
+
+    sup,
+    sub {
+        color: #947332;
+        font-weight: 700;
+    }
+
+    pre {
+        background: #302d27;
+        color: #eee5cf;
+        padding: 24px;
+        margin: 25px 0;
+        border-radius: 12px;
+        overflow-x: auto;
+        line-height: 1.6;
+        font-size: 14px;
+        box-shadow: 0 5px 15px rgba(48, 45, 39, 0.12);
+    }
+
+    pre code {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+        font-size: inherit;
+    }
+
+    kbd {
+        background: #eee5cf;
+        color: #6e5525;
+        padding: 3px 8px;
+        border: 1px solid #d8c9a5;
+        border-radius: 5px;
+        font-family: "Consolas", monospace;
+        font-size: 0.85em;
+        box-shadow: 0 2px 0 #c9b78e;
+    }
+
+    var {
+        color: #947332;
+        font-family: "Consolas", monospace;
+        font-weight: 600;
+    }
+
+    samp {
+        color: #d9c18a;
+        font-family: "Consolas", monospace;
+    }
+
+    time {
+        display: inline-block;
+        background: #eee5cf;
+        color: #80632b;
+        padding: 5px 10px;
+        margin: 5px 3px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    cite {
+        color: #9a8253;
+        font-weight: 600;
+    }
+</style>
+
+<body>
+    <p>
+        The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+        <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an
+        extended quotation.
+    </p>
+
+    <p>Here is a blockquote:</p>
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/blockquote">
+        <p>
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+            <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+            an extended quotation.
+        </p>
+    </blockquote>
+
+    <p>
+        The quote element — <code>&lt;q&gt;</code> — is
+        <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/q">
+            intended for short quotations that don't require paragraph breaks.
+        </q>
+    </p>
+    <p>
+        According to the
+        <a href="/en-US/docs/Web/HTML/Reference/Elements/blockquote">
+            <cite>MDN blockquote page</cite></a>:
+    </p>
+
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/blockquote">
+        <p>
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+            <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+            an extended quotation.
+        </p>
+    </blockquote>
+
+    <p>
+        The quote element — <code>&lt;q&gt;</code> — is
+        <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/q">
+            intended for short quotations that don't require paragraph breaks.
+        </q>
+        — <a href="/en-US/docs/Web/HTML/Reference/Elements/q"><cite>MDN q page</cite></a>.
+    </p>
+    <!-- Superscript and subscript -->
+
+    <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+    <p>
+        Caffeine's chemical formula is
+        C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+    </p>
+    <p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+
+    <pre><code>const para = document.querySelector('p');
+
+para.onclick = function() {
+  alert('Owww, stop poking me!');
+}</code></pre>
+
+    <p>
+        You shouldn't use presentational elements like <code>&lt;font&gt;</code> and
+        <code>&lt;center&gt;</code>.
+    </p>
+
+    <p>
+        In the above JavaScript example, <var>para</var> represents a paragraph
+        element.
+    </p>
+
+    <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+    <pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+    <h2>The basic html syntax</h2>
+    <pre>
+    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+    </pre>
+
+    <!-- datetimes -->
+    <!-- Standard simple date -->
+    <time datetime="2016-01-20">20 January 2016</time>
+    <!-- Just year and month -->
+    <time datetime="2016-01">January 2016</time>
+    <!-- Just month and day -->
+    <time datetime="01-20">20 January</time>
+    <!-- Just time, hours and minutes -->
+    <time datetime="19:30">19:30</time>
+    <!-- You can do seconds and milliseconds too! -->
+    <time datetime="19:30:01.856">19:30:01.856</time>
+    <!-- Date and time -->
+    <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+    <!-- Date and time with timezone offset -->
+    <time datetime="2016-01-20T19:30+01:00">
+        7.30pm, 20 January 2016 is 8.30pm in France
+    </time>
+    <!-- Calling out a specific week number -->
+    <time datetime="2016-W04">The fourth week of 2016</time>
+
+</body>
+
+</html>
