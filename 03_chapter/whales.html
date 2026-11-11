@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whales page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .page-title {
+        color: #e0f2fe;
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 35px;
+        letter-spacing: 1.5px;
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    body {
+        background-color: #17273d;
+        font-family: Arial, sans-serif;
+        padding: 40px 20px;
+    }
+
+    ul {
+        list-style: none;
+        max-width: 1100px;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    li {
+        overflow: hidden;
+        border-radius: 15px;
+        background-color: #1c3045;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    li:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    img {
+        width: 100%;
+        height: 250px;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    li:hover img {
+        transform: scale(1.06);
+    }
+</style>
+
+<body>
+    <h1 class="page-title"">Images of whales in different places</h1>
+    <ul>
+        <li><img src="https://suchscience.net/wp-content/uploads/2024/09/v2-iocon-ugcjz.jpg" alt="The blue whale"></li>
+        <li><img src="https://tse1.explicit.bing.net/th/id/OIP.hPMLj28suaLlTuHvdS4OjAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="The whale in the sunset"></li>
+        <li><img src="https://tse3.mm.bing.net/th/id/OIP.NCqIENIYizR1zFAJYh_qXwHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="The whales in the sea beach"></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_links</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #101b2a, #1c3045);
+        font-family: Arial, sans-serif;
+        color: #e0f2fe;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 42px;
+        color: #e0f2fe;
+        margin-bottom: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    p {
+        max-width: 650px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.06);
+        padding: 22px 25px;
+        margin-bottom: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+
+        font-size: 17px;
+        line-height: 1.7;
+        color: #cbd5e1;
+    }
+
+    a {
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid transparent;
+        transition: 0.3s ease;
+    }
+
+    a:hover {
+        color: #7dd3fc;
+        border-bottom: 1px solid #7dd3fc;
+    }
+
+    a:focus-visible {
+        outline: 2px solid #38bdf8;
+        outline-offset: 4px;
+        border-radius: 2px;
+    }
+
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #101b2a, #1c3045);
+    font-family: Arial, sans-serif;
+    color: #e0f2fe;
+    padding: 60px 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #e0f2fe;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Link list */
+ul {
+    list-style: none;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* List items */
+li {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(8px);
+    background: rgba(56, 189, 248, 0.1);
+    border-color: #38bdf8;
+}
+
+/* Links */
+a {
+    display: block;
+    padding: 20px 24px;
+    color: #7dd3fc;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Keyboard focus */
+a:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: -4px;
+    border-radius: 12px;
+}
+
+/* Empty div separator */
+div {
+    max-width: 650px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 50px auto;
+}
+
+/* Bottom paragraph */
+#bottom {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #bae6fd;
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 40px 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: 15px;
+        padding: 18px;
+    }
+}
+
+</style>
+
+<body>
+    <h1>Information on Whales</h1>
+
+    <p>
+        For more information on our conservation activities and which Whales we study,
+        see our <a href="whales.html" target="_blank">Whales page</a>.
+    </p>
+
+    <p>
+        If you want to ask our team more questions, feel free to
+        <a href="mailto:avikmukherjee568@gmail.com" target="_blank">email us</a>.
+    </p>
+
+    <h1>List path tests</h1>
+
+    <ul>
+        <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Blue-whale.jpg" target="_blank">
+                Link me to the blue whale image
+            </a>
+        </li>
+
+        <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Narwhal_and_Beluga.jpg" target="_blank">
+                Link me to the narwhal image
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.google.com/search?tbm=isch&q=whales" target="_blank">
+                Link me to Google image search
+            </a>
+        </li>
+
+        <li>
+            <a href="#bottom">
+                Link me to the paragraph at the bottom of the page
+            </a>
+        </li>
+    </ul>
+
+    <div></div>
+
+    <p id="bottom">The bottom of the page!</p>
+
+</body>
+
+</html>
